@@ -1,6 +1,5 @@
 package com.monicapeters.myappportfolio;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -12,40 +11,62 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
-    Context context = getApplicationContext();
-    int toastDuration = Toast.LENGTH_SHORT;
-
-    CharSequence spotifyText = "Spotify App Here";
-    CharSequence scoresText = "Scores App Here";
-    CharSequence libraryText = "Library App Here";
-    CharSequence builditText = "Build It Bigger App Here";
-    CharSequence xyzreaderText = "XYZ Reader App Here";
-    CharSequence capstoneText = "Capstone App Here";*/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //spotify streamer
-        final Button spotifyButton = (Button) findViewById(R.id.spotify_button);
+        Button spotifyButton = (Button) findViewById(R.id.spotify_button);
         spotifyButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Perform action on click
-                Toast toast = Toast.makeText(context, spotifyText, toastDuration);
-                toast.show();
+                Toast.makeText(getApplicationContext(), "This button will launch my Spotify App", Toast.LENGTH_SHORT).show();
             }
         });
 
         //scores app
+        Button scoresButton = (Button) findViewById(R.id.scores_button);
+        scoresButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This button will launch my Scores App", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         //library app
+        Button libraryButton = (Button) findViewById(R.id.library_button);
+        libraryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This button will launch my Library App", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         //build it bigger app
+        Button builditbiggerButton = (Button) findViewById(R.id.builditbigger_button);
+        builditbiggerButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This button will launch my Build It Bigger App", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         //xyz reader app
+        Button xyzButton = (Button) findViewById(R.id.xyzreader_button);
+        xyzButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This button will launch my XYZ Reader App", Toast.LENGTH_SHORT).show();
+
+            }
+        });
 
         //capstone app
+        Button capstoneButton = (Button) findViewById(R.id.capstone_button);
+        capstoneButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "This button will launch my Capstone App", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

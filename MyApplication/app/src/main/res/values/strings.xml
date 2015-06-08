@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">My App Portfolio</string>
-
-    <string name="hello_world">MY NANODEGREE APPS!</string>
+    <string name="author_name">Monica Peters</string>
+    <string name="author_email">MoniGarr@Yahoo.com</string>
+    <string name="author_website">MoniGarr.com</string>
+    <string name="nanodegree_text">MY NANODEGREE APPS!</string>
     <string name="spotify_streamer">SPOTIFY STREAMER</string>
     <string name="scores_app">SCORES APP</string>
     <string name="library_app">LIBRARY APP</string>
