@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
+import android.content.Context;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -18,37 +18,37 @@ public class MainActivity extends ActionBarActivity {
 
         //spotify streamer
         Button spotifyButton = (Button) findViewById(R.id.spotify_button);
-        spotifyButton.setText("This button will launch my Spotify App");
+        spotifyButton.setText("Spotify App");
 
 
         //scores app
         Button scoresButton = (Button) findViewById(R.id.scores_button);
-        scoresButton.setText("This button will launch my Scores App");
+        scoresButton.setText("Scores App");
 
         //library app
         Button libraryButton = (Button) findViewById(R.id.library_button);
-        libraryButton..setText("This button will launch my Library App");
+        libraryButton.setText("Library App");
 
         //build it bigger app
         Button builditbiggerButton = (Button) findViewById(R.id.builditbigger_button);
-        builditbiggerButton.setText("This button will launch my Build It Bigger App");
+        builditbiggerButton.setText("Build It Bigger App");
 
         //xyz reader app
         Button xyzButton = (Button) findViewById(R.id.xyzreader_button);
-        xyzButton.setText( "This button will launch my XYZ Reader App");
+        xyzButton.setText( "XYZ Reader App");
 
         //capstone app
         Button capstoneButton = (Button) findViewById(R.id.capstone_button);
-        capstoneButton.setText("This button will launch my Capstone App");
+        capstoneButton.setText("Capstone App");
 
     }
 
-    @Override
     public void displayToast(View view) {
         Button button = (Button) view;
         String buttonText = (String) button.getText();
 
         Context context = getApplicationContext();
+
         CharSequence text = getString(R.string.open_app) + buttonText;
         int duration = Toast.LENGTH_SHORT;
 
