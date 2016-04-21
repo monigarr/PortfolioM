@@ -18,56 +18,42 @@ public class MainActivity extends ActionBarActivity {
 
         //spotify streamer
         Button spotifyButton = (Button) findViewById(R.id.spotify_button);
-        spotifyButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This button will launch my Spotify App", Toast.LENGTH_SHORT).show();
-            }
-        });
+        spotifyButton.setText("This button will launch my Spotify App");
+
 
         //scores app
         Button scoresButton = (Button) findViewById(R.id.scores_button);
-        scoresButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This button will launch my Scores App", Toast.LENGTH_SHORT).show();
-
-            }
-        });
+        scoresButton.setText("This button will launch my Scores App");
 
         //library app
         Button libraryButton = (Button) findViewById(R.id.library_button);
-        libraryButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This button will launch my Library App", Toast.LENGTH_SHORT).show();
-
-            }
-        });
+        libraryButton..setText("This button will launch my Library App");
 
         //build it bigger app
         Button builditbiggerButton = (Button) findViewById(R.id.builditbigger_button);
-        builditbiggerButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This button will launch my Build It Bigger App", Toast.LENGTH_SHORT).show();
-
-            }
-        });
+        builditbiggerButton.setText("This button will launch my Build It Bigger App");
 
         //xyz reader app
         Button xyzButton = (Button) findViewById(R.id.xyzreader_button);
-        xyzButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This button will launch my XYZ Reader App", Toast.LENGTH_SHORT).show();
-
-            }
-        });
+        xyzButton.setText( "This button will launch my XYZ Reader App");
 
         //capstone app
         Button capstoneButton = (Button) findViewById(R.id.capstone_button);
-        capstoneButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "This button will launch my Capstone App", Toast.LENGTH_SHORT).show();
-            }
-        });
+        capstoneButton.setText("This button will launch my Capstone App");
 
+    }
+
+    @Override
+    public void displayToast(View view) {
+        Button button = (Button) view;
+        String buttonText = (String) button.getText();
+
+        Context context = getApplicationContext();
+        CharSequence text = getString(R.string.open_app) + buttonText;
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     @Override
