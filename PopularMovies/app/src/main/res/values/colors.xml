@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+ColourLovers Palette
+"Jimmy's Iced Coffee"
+http://www.colourlovers.com/digital-art/trends/branding/7887/Jimmys_Iced_Coffee
+-->
+
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#E24B2C</color>
+    <color name="colorLightest">#FFFFFF</color>
+    <color name="colorLighter">#E7F3EF</color>
+    <color name="colorLight">#55C3DC</color>
+    <color name="colorDark">#73726D</color>
+    <color name="colorDarker">#8C6429</color>
+    <color name="colorDarkest">#000000</color>
 </resources>
